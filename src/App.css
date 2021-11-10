@@ -1,0 +1,110 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,section,aside{display:block;}
+html,body{height:100%;margin:0;padding:0;min-width:$minwidth;position: relative;width: 100%;color:#000;}
+body{font-size:100%;line-height:1;font-size:14px;font-family: $fontfamily;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body.lock{
+  overflow: hidden;
+@media (max-width:$md3+px) {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+}
+input,button,textarea{font-family:$fontfamily;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+/*
+  $white: #FFF;
+  $black: #15171D;
+  $darkGray: #8A93A8;
+  $red: #F91155;
+  $yellow: #FFE043;
+  $green: #32DE84;
+  $lightGrey: #F1F6FB;
+  $blue: #3D7EFF;
+*/
+
+body{
+  color: #15171D;
+}
+
+#main h1, #main h2{
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.main__page{
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.main__content{
+  flex: 1;
+}
+
+.blue{
+  color: #4294d7;
+}
+
+.container{
+  max-width: 1263px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
+}
+
+.technologiesBody{
+  border: 1px solid #9e9b9b;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fafafa;
+}
+
+.title{
+  text-decoration: underline;
+  margin-bottom: 16px !important;
+}
+
+.list li{
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.list li:last-child{
+  margin-bottom: 0;
+}
+
+.list li span{
+  font-weight: bold;
+}
+
+.list li:before{
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 0;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #4762ce;
+  border-radius: 50%;
+}
+
+
